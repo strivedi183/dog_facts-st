@@ -1,0 +1,9 @@
+<h1>Authors and their Facts</h1>
+
+<% @authors.each do |author| %>
+  <h2>Author: <%= link_to(author.name, author) %></h2>
+  <% author.facts.each do |fact| %>
+    <h3>Fact: <%= link_to(fact.body, fact_path(fact)) %></h3>
+  <% end %>
+  <br />
+<% end %>

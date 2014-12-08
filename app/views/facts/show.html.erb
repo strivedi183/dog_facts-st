@@ -1,0 +1,6 @@
+<h1>One Fact and their Author</h1>
+
+<h2>Fact: <%= @fact.body %></h2>
+<h3>Author: <%= link_to(@fact.author.name, author_path(@fact.author)) %></h3>
+
+<h4><%= link_to "Back to Fact's index", facts_path %></h4>
